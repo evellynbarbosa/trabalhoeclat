@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉCLAT | Beleza em cada detalhe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header" id="inicio">
+        <a href="#inicio" class="logo">ÉCLAT<span>.</span></a>
+
+        <nav class="menu">
+            <a href="#inicio">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#kit">Kit especial</a>
+        </nav>
+
+        <button class="cart-button" id="open-cart">
+            Sacola <span id="cart-count">0</span>
+        </button>
+    </header>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="eyebrow">BELEZA EM CADA DETALHE</span>
+
+            <h1>Seu brilho,<br><em>sua essência.</em></h1>
+
+            <p>
+                A beleza está nos pequenos detalhes.
+                Descubra a coleção ÉCLAT e encontre
+                o brilho que combina com você.
+            </p>
+
+            <a href="#produtos" class="main-button">Conheça a coleção</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="kit-eclat..jpeg" alt="Coleção de glosses ÉCLAT">
+        </div>
+    </section>
+
+    <!-- FRASE -->
+    <section class="phrase">
+        <span>ÉCLAT BEAUTY</span>
+        <h2>Um toque de brilho transforma tudo.</h2>
+    </section>
+
+    <!-- PRODUTOS -->
+    <section class="products-section" id="produtos">
+
+        <div class="section-title">
+            <span class="eyebrow">NOSSA COLEÇÃO</span>
+            <h2>Escolha seu favorito</h2>
+            <p>Conheça os detalhes de cada gloss da ÉCLAT.</p>
+        </div>
+
+        <div class="products-grid">
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="gloss-rose..jpeg" alt="Gloss Rosé">
+                </div>
+
+                <div class="product-info">
+                    <h3>Gloss Rosé</h3>
+                    <p>Delicadeza e brilho para seus lábios.</p>
+                    <strong>R$ 60,00</strong>
+
+                    <button class="add-button" data-name="Gloss Rosé" data-price="60">
+                        + Adicionar à sacola
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="gloss-prata.jpeg" alt="Gloss Prata">
+                </div>
+
+                <div class="product-info">
+                    <h3>Gloss Prata</h3>
+                    <p>Um brilho especial para completar seu visual.</p>
+                    <strong>R$ 60,00</strong>
+
+                    <button class="add-button" data-name="Gloss Prata" data-price="60">
+                        + Adicionar à sacola
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="gloss-rosa.jpeg" alt="Gloss Rosa">
+                </div>
+
+                <div class="product-info">
+                    <h3>Gloss Rosa</h3>
+                    <p>Um toque de cor e delicadeza.</p>
+                    <strong>R$ 60,00</strong>
+
+                    <button class="add-button" data-name="Gloss Rosa" data-price="60">
+                        + Adicionar à sacola
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- KIT ESPECIAL -->
+    <section class="kit-section" id="kit">
+
+        <div class="kit-image">
+            <img src="kit-eclat..jpeg" alt="Kit especial ÉCLAT">
+        </div>
+
+        <div class="kit-content">
+            <span class="eyebrow">COLEÇÃO ESPECIAL</span>
+
+            <h2>Um brilho<br><em>para chamar de seu.</em></h2>
+
+            <p>
+                A coleção ÉCLAT reunida em um kit especial.
+                Uma combinação delicada para deixar seus
+                momentos ainda mais especiais.
+            </p>
+
+            <strong class="kit-price">R$ 140,00</strong>
+
+            <button class="add-button kit-button"
+                    data-name="Kit ÉCLAT"
+                    data-price="140">
+                + Adicionar kit à sacola
+            </button>
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <a href="#inicio" class="logo">ÉCLAT<span>.</span></a>
+
+        <p>Beleza em cada detalhe.</p>
+
+        <div class="customer-service">
+            <h3>Como podemos ajudar?</h3>
+
+            <p>
+                Para dúvidas, sugestões ou reclamações,
+                entre em contato com nosso atendimento.
+            </p>
+
+            <a
+                href="https://wa.me/554499999999?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20o%20atendimento%20da%20%C3%89CLAT."
+                target="_blank"
+                rel="noopener"
+                class="whatsapp-button"
+            >
+                Falar com atendimento pelo WhatsApp
+            </a>
+        </div>
+
+        <small>© 2026 ÉCLAT. Todos os direitos reservados.</small>
+
+    </footer>
+
+    <!-- PAINEL DA SACOLA -->
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-panel" id="cart-panel">
+
+        <div class="cart-header">
+            <h2>Minha sacola</h2>
+            <button class="close-cart" id="close-cart" aria-label="Fechar sacola">×</button>
+        </div>
+
+        <div class="cart-items" id="cart-items">
+            <p class="empty-cart">Sua sacola está vazia.</p>
+        </div>
+
+        <div class="cart-bottom">
+            <div class="cart-total">
+                <span>Subtotal</span>
+                <strong id="cart-total">R$ 0,00</strong>
+            </div>
+
+            <button class="checkout-button" id="checkout">
+                Finalizar pedido
+            </button>
+        </div>
+
+    </aside>
+
+    <!-- FUNCIONAMENTO DA SACOLA -->
+    <script>
+        const whatsapp = "554499999999";
+
+        let cart = [];
+
+        const cartPanel = document.getElementById("cart-panel");
+        const overlay = document.getElementById("overlay");
+        const cartItems = document.getElementById("cart-items");
+        const cartCount = document.getElementById("cart-count");
+        const cartTotal = document.getElementById("cart-total");
+
+        // Formata os valores em reais
+        function money(value) {
+            return value.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            });
+        }
+
+        // Abre a sacola
+        function openCart() {
+            cartPanel.classList.add("active");
+            overlay.classList.add("active");
+        }
+
+        // Fecha a sacola
+        function closeCart() {
+            cartPanel.classList.remove("active");
+            overlay.classList.remove("active");
+        }
+
+        document.getElementById("open-cart").addEventListener("click", openCart);
+        document.getElementById("close-cart").addEventListener("click", closeCart);
+        overlay.addEventListener("click", closeCart);
+
+        // Adiciona produtos
+        document.querySelectorAll(".add-button").forEach(button => {
+            button.addEventListener("click", () => {
+                const name = button.dataset.name;
+                const price = Number(button.dataset.price);
+
+                const existing = cart.find(item => item.name === name);
+
+                if (existing) {
+                    existing.quantity++;
+                } else {
+                    cart.push({
+                        name,
+                        price,
+                        quantity: 1
+                    });
+                }
+
+                updateCart();
+                openCart();
+            });
+        });
+
+        // Atualiza os produtos e valores da sacola
+        function updateCart() {
+            cartItems.innerHTML = "";
+
+            let total = 0;
+            let quantity = 0;
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p class="empty-cart">Sua sacola está vazia.</p>';
+            }
+
+            cart.forEach((item, index) => {
+                const itemTotal = item.price * item.quantity;
+
+                total += itemTotal;
+                quantity += item.quantity;
+
+                const element = document.createElement("div");
+                element.className = "cart-item";
+
+                const details = document.createElement("div");
+                const name = document.createElement("h3");
+                const description = document.createElement("p");
+
+                name.textContent = item.name;
+                description.textContent = item.quantity + " x " + money(item.price);
+
+                details.append(name, description);
+
+                const actions = document.createElement("div");
+                actions.className = "cart-item-actions";
+
+                const price = document.createElement("strong");
+                price.textContent = money(itemTotal);
+
+                const remove = document.createElement("button");
+                remove.textContent = "Remover";
+                remove.type = "button";
+                remove.addEventListener("click", () => removeItem(index));
+
+                actions.append(price, remove);
+                element.append(details, actions);
+                cartItems.appendChild(element);
+            });
+
+            cartCount.textContent = quantity;
+            cartTotal.textContent = money(total);
+        }
+
+        // Remove um produto
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        // Finaliza o pedido pelo WhatsApp
+        document.getElementById("checkout").addEventListener("click", () => {
+            if (cart.length === 0) {
+                alert("Sua sacola está vazia!");
+                return;
+            }
+
+            let total = 0;
+            let message = "Olá! Gostaria de fazer um pedido na ÉCLAT:\n\n";
+
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+
+                total += itemTotal;
+
+                message += item.quantity + "x " + item.name +
+                    " - " + money(itemTotal) + "\n";
+            });
+
+            message += "\nSubtotal: " + money(total);
+            message += "\n\nGostaria de continuar meu pedido.";
+
+            const url = "https://wa.me/" + whatsapp +
+                "?text=" + encodeURIComponent(message);
+
+            window.open(url, "_blank");
+        });
+
+        updateCart();
+    </script>
+
+</body>
+</html>
